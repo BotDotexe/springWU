@@ -1,0 +1,124 @@
+
+#wrapperFirst{
+    display:grid;
+    background-image:url(https://aldmn.com/wp-content/uploads/2019/08/Right-Stone-For-Building-Walls.jpg);
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    grid-template:10% repeat(2,26%) repeat(2, 1fr) / 1fr 60% 1fr;
+    grid-template-areas: 
+    "header header header"
+    "startmain startmain aside"
+    "startmain startmain aside"
+    "startmain startmain aside"
+    "footer footer footer";
+}
+
+
+
+
+
+
+
+.header{
+    grid-area: header;
+    background-color: whitesmoke;
+}
+.aside{
+    grid-area: aside;
+    background-color: whitesmoke;
+}
+
+.startmain{
+    grid-area: startmain;
+    background-color: whitesmoke;
+}
+
+.footer{
+    grid-area:footer;
+    background-color: whitesmoke;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    #wrapperFirst{
+        display:grid;
+        background-color: pink;
+        margin:0;
+        height: 100vh;
+        width: 100vw;
+        gap: 15px;
+        grid-template: 20% repeat(3, 25) 1fr / 50% 50%;
+        grid-template-areas: 
+        "header header"
+        "startmain startmain"
+        "startmain startmain"
+        "startmain startmain"
+        "footer footer" ;
+        
+    }
+    .aside{
+    height: 100vh;
+    width: 80vw;
+    background: hotpink;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    body{
+        background-color: green;
+
+        p { 
+        color: white;
+        }
+        .menu-button{
+            display: none;
+        }
+    }
+} 
+    
