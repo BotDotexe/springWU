@@ -15,8 +15,54 @@
     "footer footer footer";
 }
 
+#wrapperSecond{
+    display: grid;
+    background-color: rgb(77, 74, 74);
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    grid-template:10% repeat(2,26%) repeat(2, 1fr) / 1fr 60% 1fr;
+    grid-template-areas: 
+    "header header header"
+    "secondmain secondmain secondmain"
+    "secondmain secondmain secondmain"
+    "secondmain secondmain secondmain"
+    "footer footer footer";
 
+}
 
+#wrapperThird{
+    display: grid;
+    background-color: rgb(77, 74, 74);
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    grid-template:10% repeat(2,26%) repeat(2, 1fr) / 1fr 60% 1fr;
+    grid-template-areas: 
+    "header header header"
+    "thirdmain thirdmain thirdmain"
+    "thirdmain thirdmain thirdmain"
+    "thirdmain thirdmain thirdmain"
+    "footer footer footer";
+}
+
+#wrapperFourth{
+    display: grid;
+    background-color: rgb(77, 74, 74);
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    grid-template:10% repeat(2,26%) repeat(2, 1fr) / 1fr 60% 1fr;
+    grid-template-areas: 
+    "header header header"
+    "FP1 FP2 FP3"
+    "FP1 FP2 FP3"
+    "FP1 FP2 FP3"
+    "footer footer footer";
+}
 
 
 
@@ -38,12 +84,51 @@
     
 }
 
+
 .startmain{
     display: flex;
     grid-area: startmain;
     background-color: whitesmoke;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.secondMain{
+    display: flex;
+    grid-area: secondmain;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+.thirdMain{
+    display: flex;
+    grid-area: thirdmain;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+.fourthmain{
+    display: flex;
+    grid-area: fourthmain;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+
+#FourthPillar1{
+    display: flex;
+    grid-area:FP1;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+#FourthPillar2{
+    display: flex;
+    grid-area:FP2;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+#FourthPillar3{
+    display: flex;
+    grid-area:FP3;
+    background-color: whitesmoke;
+    margin: 20px;
 }
 
 .footer{
@@ -64,8 +149,31 @@
 #div3aside{
 
 }
+.navdiv{
+    background-color: cornflowerblue;
+    
+}
+.navigation{
+    height: 30%;
+    display: flex;
+    width: 100%;
+    background-color: cadetblue;
+    align-self: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.carads{
+    width: 30%;
+    height: 87.5%;
+    background-color: darkgrey;
+    margin: 40px;
+}
 .border{
-   border-color: rgb(77, 74, 74);
+    border: 2px solid rgb(77, 74, 74);
+    border-color: rgb(77, 74, 74);
+}
+.rounded{
+    border-radius: 15px;
 }
 .nav{
     width: 5%;
@@ -110,53 +218,3 @@
 }
 
 }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 500px) {
-    body{
-        background-color: green;
-
-        p { 
-        color: white;
-        }
-        .menu-button{
-            display: none;
-        }
-    }
-} 
-    
