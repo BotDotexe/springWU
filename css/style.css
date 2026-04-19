@@ -172,7 +172,7 @@ background-color: whitesmoke;
     height: 100%;
     display: flex;
     width: 100%;
-    background-color: cadetblue;
+    background-color: cornflowerblue;
     align-self: flex-end;
     justify-content: space-evenly;
     align-items: center;
@@ -228,7 +228,7 @@ background-color: whitesmoke;
 .ham-menu span{
     height: 5px;
     width: 100%;
-    background-color: aqua;
+    background-color: black;
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -287,13 +287,14 @@ background-color: whitesmoke;
 }
 .divthird{
     text-align: center;
-    
+    padding: 20px;
 }
 .secondthirdmain{
     display: flex;
     grid-area: thirdy;
     background-color: whitesmoke;
     margin: 20px;
+    padding: 20px;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -440,4 +441,21 @@ background-color: whitesmoke;
     .picture-div{
         display: none;
     }
+    #wrapperThird{
+    display: grid;
+    background-image: url(https://prime-landscape-supply.com/cdn/shop/files/filldirt.jpg?v=1709076724);
+    background-repeat: no-repeat;
+    margin:0;
+    
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    grid-template:10% repeat(2,26%) repeat(2, 1fr) / 10fr 60% 10%;
+    grid-template-areas: 
+    "header header header"
+    "thirdmain thirdmain thirdmain"
+    "thirdmain thirdmain thirdmain"
+    "thirdy thirdy thirdy"
+    "footer footer footer";
+}
 }
