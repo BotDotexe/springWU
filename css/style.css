@@ -35,17 +35,19 @@
 
 #wrapperThird{
     display: grid;
-    background-color: rgb(77, 74, 74);
+    background-image: url(https://prime-landscape-supply.com/cdn/shop/files/filldirt.jpg?v=1709076724);
+    background-repeat: no-repeat;
     margin:0;
+    
     height: 100vh;
     width: 100vw;
     gap: 30px;
-    grid-template:10% repeat(2,26%) repeat(2, 1fr) / 1fr 60% 1fr;
+    grid-template:10% repeat(2,26%) repeat(2, 1fr) / 10fr 60% 10%;
     grid-template-areas: 
     "header header header"
     "thirdmain thirdmain thirdmain"
-    "thirdmain thirdmain thirdmain"
-    "thirdmain thirdmain thirdmain"
+    "thirdy thirdy thirdy"
+    ". . ."
     "footer footer footer";
 }
 
@@ -93,6 +95,7 @@
     background-color: whitesmoke;
     flex-direction: column;
     flex-wrap: wrap;
+    overflow: scroll;
 }
 
 .secondMain{
@@ -106,6 +109,10 @@
     grid-area: thirdmain;
     background-color: whitesmoke;
     margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
 }
 .fourthmain{
     display: flex;
@@ -117,19 +124,22 @@
 #FourthPillar1{
     display: flex;
     grid-area:FP1;
-    background-color: whitesmoke;
+    background-color: white;
     margin: 20px;
+
 }
 #FourthPillar2{
     display: flex;
     grid-area:FP2;
-    background-color: whitesmoke;
+    background-color: white;
     margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 #FourthPillar3{
     display: flex;
     grid-area:FP3;
-    background-color: whitesmoke;
+    background-color: white;
     margin: 20px;
 }
 
@@ -152,7 +162,7 @@
     height: 100%;
 }   
 #div3aside{
-
+background-color: whitesmoke;
 }
 .navdiv{
     background-color: cornflowerblue;
@@ -188,8 +198,7 @@
 #div4aside{
     align-self: center;
 }
-.fade-layer{
-}
+
 .off-screen-menu{
     background-color: darkgrey;
     height: 100vh;
@@ -200,10 +209,11 @@
     right: -450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     transition: .3s ease;
+
 }
 
 .off-screen-menu.active{
@@ -261,11 +271,33 @@
     width: 100%;
     height: 50%;
 }
-.img2Second{
+.img2second{
+    display: contents;
     width: 100%;
     height: 100%;
 }
-
+.faq {
+    overflow: scroll;
+}
+.faq h3{
+    margin-top: 20px;
+}
+.picture-div{
+    display: contents;
+}
+.divthird{
+    text-align: center;
+    
+}
+.secondthirdmain{
+    display: flex;
+    grid-area: thirdy;
+    background-color: whitesmoke;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 
@@ -310,7 +342,7 @@
 @media screen and (max-width: 650px) {
     #wrapperFirst{
         display:grid;
-        background-color: pink;
+        background-color: rgb(77, 74, 74);
         
         margin: auto;
         height: 100vh;
@@ -328,7 +360,7 @@
     .aside{
     height: 100vh;
     width: 80vw;
-    background: hotpink;
+    background: rgb(77, 74, 74);
     position: fixed;
     top: 0;
     left: -90vw;
@@ -345,7 +377,7 @@
     }
     #wrapperSecond{
     display: grid;
-    background-color: aqua;
+    background-color: rgb(77, 74, 74);
     margin: auto;
     height: 100vh;
     width: 100vw;
@@ -383,13 +415,29 @@
     height: 100vh;
     width: 100vw;
     
-    grid-template:10% repeat(3, 20%) 1fr / repeat(2, 33%) 1fr;
+    grid-template:10% repeat(2, 30%) 1fr / repeat(2, 33%) 1fr;
     grid-template-areas: 
     "header header header"
     "FP1 FP1 FP1"
-    "FP2 FP2 FP2"
     "FP3 FP3 FP3"
     "footer footer footer";
-}
-
+    }
+    .aside2Main{
+        display: none;
+    }
+    .img2second{
+        display: none;
+    }
+    .img1Second{
+        display: none;
+    }
+    .reviews h1{
+        display: none;
+    }
+    .faq h1{
+        display: none;
+    }
+    .picture-div{
+        display: none;
+    }
 }
